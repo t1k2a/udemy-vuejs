@@ -1,18 +1,19 @@
 <template>
     <div>
-        <slot><h2>デフォルトのタイトル</h2></slot>
-        <p>{{ hederText }}</p>
+        <slot></slot>
     </div>
+
 </template>
 
 <script>
 export default {
-    props: ["headerText"]
+  data() {
+    return {
+      user:{
+        firstName: "Jack",
+        lastName: "Donald"
+      }
+    }
+  }
 }
 </script>
-
-<style>
-      h1 {
-    color:red;
-  }
-</style>
